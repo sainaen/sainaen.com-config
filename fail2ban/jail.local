@@ -1,0 +1,14 @@
+[DEFAULT]
+# "bantime" is the number of seconds that a host is banned.
+# UPD: 600 (10 min) -> 1800 (30 min)
+bantime  = 1800
+
+# A host is banned if it has generated "maxretry" during the last "findtime"
+# seconds.
+# UPD: 600 (10 min) -> 3600 (1 hour)
+findtime  = 3600
+
+# "maxretry" is the number of failures before a host get banned.
+# UPD: 5 -> 3
+maxretry = 3
+

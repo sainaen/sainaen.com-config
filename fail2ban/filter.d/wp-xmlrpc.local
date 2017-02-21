@@ -1,0 +1,8 @@
+# fail2ban filter configuration for nginx that bans
+# for trying to exploit a vulnarability in the WordPress' `xmlrpc.php`
+
+
+[Definition]
+failregex = ^<HOST> -.+? "POST https?://[^/]+/xmlrpc.php .+$
+
+ignoreregex = 
