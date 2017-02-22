@@ -9,7 +9,7 @@ logpath = %(nginx_access_log)s
 
 # ban for 24 hours, if during
 bantime  = 86400
-# 1 hour there were at least
-findtime  = 3600
-# 3 attempts
-maxretry = 3
+# last 3 hours there were at least
+findtime  = 10800
+# 2 attempts
+maxretry = 2
