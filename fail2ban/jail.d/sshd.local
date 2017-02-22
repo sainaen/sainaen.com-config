@@ -1,0 +1,7 @@
+[sshd]
+# ban for 12 hours, if during
+bantime  = 43200
+# 1 hour there were at least
+findtime  = 3600
+# 3 attempts
+maxretry = 3
