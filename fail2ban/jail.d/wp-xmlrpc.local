@@ -7,9 +7,9 @@ port = http,https
 filter = wp-xmlrpc
 logpath = %(nginx_access_log)s
 
-# ban for 24 hours, if during
-bantime  = 86400
-# last 3 hours there were at least
-findtime  = 10800
+# ban for 3 days, if during
+bantime  = 259200
+# last 5 hours there were at least
+findtime  = 18000
 # 2 attempts
 maxretry = 2
