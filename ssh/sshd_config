@@ -22,10 +22,6 @@ LogLevel VERBOSE
 Subsystem sftp  /usr/lib/ssh/sftp-server -f AUTHPRIV -l INFO
 
 
-# Use kernel sandbox mechanisms where possible in unprivileged processes
-# Systrace on OpenBSD, Seccomp on Linux, seatbelt on MacOSX/Darwin, rlimit elsewhere.
-UsePrivilegeSeparation sandbox
-
 ### Some Debian default overrides
 AcceptEnv LANG LC_* # copy these env variables from the client
 
