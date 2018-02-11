@@ -3,6 +3,6 @@
 
 
 [Definition]
-failregex = ^<HOST> -.+? "POST https?://[^/]+/xmlrpc.php .+$
+failregex = ^<HOST> -.+? "(POST|GET) https?://[^/]+/xmlrpc.php .+$
 
 ignoreregex = 
